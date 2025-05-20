@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Good Morning Quote Generator</h1>
+        <p>Apna naam likhein aur ek pyaara sa good morning message paayein!</p>
+
+        <div class="input-section">
+            <label for="userName">Aapka Naam:</label>
+            <input type="text" id="userName" placeholder="Jaise: Priya">
+            <button id="generateBtn">Image Banayein</button>
+        </div>
+
+        <div class="output-section" style="display:none;">
+            <h2>Aapki Image Taiyaar Hai:</h2>
+            <canvas id="quoteCanvas" width="800" height="600" style="display:none;"></canvas> <!-- Hidden canvas for drawing -->
+            <img id="generatedImage" src="" alt="Generated Good Morning Quote Image">
+            <div class="action-buttons">
+                <button id="downloadBtn">Download Karein</button>
+                <button id="shareBtn">WhatsApp Pe Share Karein</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

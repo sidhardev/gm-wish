@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff; /* AliceBlue */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start for longer content */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff; /* White */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px; /* Add some margin at the top */
+}
+
+h1 {
+    color: #ff6347; /* Tomato */
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-section label {
+    font-weight: bold;
+    color: #2e8b57; /* SeaGreen */
+}
+
+.input-section input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.input-section input[type="text"]:focus {
+    outline: none;
+    border-color: #ff6347; /* Tomato */
+    box-shadow: 0 0 5px rgba(255, 99, 71, 0.5);
+}
+
+button {
+    background-color: #ff6347; /* Tomato */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e5533d; /* Darker Tomato */
+}
+
+.output-section {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.output-section h2 {
+    color: #2e8b57; /* SeaGreen */
+    margin-bottom: 15px;
+}
+
+#generatedImage {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.action-buttons button {
+    background-color: #4682b4; /* SteelBlue */
+}
+
+.action-buttons button:hover {
+    background-color: #3a6a90; /* Darker SteelBlue */
+}
+
+#shareBtn {
+    background-color: #25D366; /* WhatsApp Green */
+}
+#shareBtn:hover {
+    background-color: #1EBE57; /* Darker WhatsApp Green */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .input-section input[type="text"] {
+        width: 90%;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
